@@ -1,0 +1,15 @@
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/bin/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/bin/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.deps.json
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/bin/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.runtimeconfig.json
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/bin/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.dll
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/bin/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.pdb
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.AssemblyInfoInputs.cache
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.AssemblyInfo.cs
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.csproj.CoreCompileInputs.cache
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.sourcelink.json
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.dll
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/refint/ZTM-C-ACCOUNTING-SYSTEM.dll
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.pdb
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ZTM-C-ACCOUNTING-SYSTEM.genruntimeconfig.cache
+/Users/kyariaclemons/Desktop/kyaria-webdev/ZTM-C-ACCOUNTING-SYSTEM/obj/Debug/net8.0/ref/ZTM-C-ACCOUNTING-SYSTEM.dll

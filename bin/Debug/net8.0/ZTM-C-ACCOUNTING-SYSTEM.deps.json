@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ZTM-C-ACCOUNTING-SYSTEM/1.0.0": {
+        "runtime": {
+          "ZTM-C-ACCOUNTING-SYSTEM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZTM-C-ACCOUNTING-SYSTEM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
