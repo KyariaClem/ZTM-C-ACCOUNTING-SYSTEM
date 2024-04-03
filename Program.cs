@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Diagnostics;
+
 Console.WriteLine("Hello, World!");
 
 
@@ -7,7 +9,14 @@ Console.WriteLine("Hello, World!");
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
 Console.WriteLine("Welcome to the Accounting System 1.0");
 // The accounting system should have a checking account and a premium account.
+Console.WriteLine("Do you want to open a Checking or Premium account ?");
+
+string accountQuestionAnswer = Console.ReadLine();
 class CheckingAccount {
+
+    private int _accountId; 
+
+    
 
 }
 
