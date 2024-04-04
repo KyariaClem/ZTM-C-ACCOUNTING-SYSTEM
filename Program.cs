@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
+using System.Reflection.Metadata.Ecma335;
 
 Console.WriteLine("Hello, World!");
 
@@ -15,12 +16,34 @@ string accountQuestionAnswer = Console.ReadLine();
 class CheckingAccount {
 
     private int _accountId; 
+     private int _balance;
 
-    
+
+
+    // set up empty constructor
+    public CheckingAccount()
+    {
+        
+    }
+
+    public CheckingAccount()
+    {
+        _accountId = 100;
+    }
+// Properties
+// Use Capitalzed name for property name
+// 
+public int AccountId {
+get { return _accountId;}
+set {_accountId = value}
+} 
+
 
 }
 
 class PremiumAccount {
+    private int _accountId; 
+    private int _balance;
 
 }
 // A checking account has an ID (number) and a balance (decimal number).
