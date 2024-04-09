@@ -34,8 +34,10 @@ class CheckingAccount {
 // Use Capitalzed name for property name
 // 
 public int AccountId {
+    // for getter return field name
+    // for setter field name = value keywork
 get { return _accountId;}
-set {_accountId = value}
+set {_accountId = value;}
 } 
 
 
