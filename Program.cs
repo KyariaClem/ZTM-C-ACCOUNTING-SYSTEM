@@ -29,18 +29,21 @@ class CheckingAccount {
     public CheckingAccount()
     {
         _accountId = 100;
+        _balance = 0;
     }
 // Properties
 // Use Capitalzed name for property name
 // 
 public int AccountId {
     // for getter return field name
-    // for setter field name = value keywork
+    // for setter field name = value keyword
 get { return _accountId;}
 set {_accountId = value;}
 } 
 
-
+public void printBalance() {
+    Console.WriteLine($"Your account balance is {}")
+}
 }
 
 class PremiumAccount {
