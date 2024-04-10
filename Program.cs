@@ -21,12 +21,12 @@ class CheckingAccount {
 
 
     // set up empty constructor
-    public CheckingAccount()
-    {
+    // public CheckingAccount()
+    // {
         
-    }
+    // }
 
-    public CheckingAccount()
+    public CheckingAccount(int _accountId, int _balance)
     {
         _accountId = 100;
         _balance = 0;
@@ -42,7 +42,7 @@ set {_accountId = value;}
 } 
 
 public void printBalance() {
-    Console.WriteLine($"Your account balance is {}")
+    Console.WriteLine($"Your account balance is {_balance}");
 }
 }
 
