@@ -1,18 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
 
 // The following Features Should Be Implemented:
+CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
+Console.WriteLine(value: checkAccount1.printBalance);
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
 Console.WriteLine("Welcome to the Accounting System 1.0");
 // The accounting system should have a checking account and a premium account.
-Console.WriteLine("Do you want to open a Checking or Premium account ?");
+//Console.WriteLine("Do you want to open a Checking or Premium account ?");
 
-string accountQuestionAnswer = Console.ReadLine();
+//string accountQuestionAnswer = Console.ReadLine();
+//CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
+Console.WriteLine(checkAccount1.printBalance);
+
+//Console.WriteLine("Do you want to open a Checking or Premium account ?");
 class CheckingAccount {
 
     private int _accountId; 
@@ -21,15 +28,15 @@ class CheckingAccount {
 
 
     // set up empty constructor
-    // public CheckingAccount()
-    // {
+    public CheckingAccount()
+    {
         
-    // }
+    }
 
     public CheckingAccount(int _accountId, int _balance)
     {
         _accountId = 100;
-        _balance = 0;
+         _balance = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -41,7 +48,13 @@ get { return _accountId;}
 set {_accountId = value;}
 } 
 
-public void printBalance() {
+public int Balance {
+    // for getter return field name
+    // for setter field name = value keyword
+get { return _balance;}
+set {_balance = value;}
+} 
+public  void printBalance() {
     Console.WriteLine($"Your account balance is {_balance}");
 }
 }
