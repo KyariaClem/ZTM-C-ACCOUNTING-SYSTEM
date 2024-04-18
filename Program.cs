@@ -5,10 +5,12 @@ using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
+Console.WriteLine("TEST");
 
 // The following Features Should Be Implemented:
 CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
-Console.WriteLine(value: checkAccount1.printBalance);
+Console.WriteLine(checkAccount1.printBalance);
+
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
 Console.WriteLine("Welcome to the Accounting System 1.0");
@@ -64,6 +66,9 @@ class PremiumAccount {
     private int _balance;
 
 }
+
+
+
 // A checking account has an ID (number) and a balance (decimal number).
 
 // You should be able to set a starting balance when creating a checking account.
