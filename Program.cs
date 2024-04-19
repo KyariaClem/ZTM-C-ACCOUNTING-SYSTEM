@@ -8,8 +8,10 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("TEST");
 
 // The following Features Should Be Implemented:
-CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
-Console.WriteLine(checkAccount1.printBalance);
+CheckingAccount checkAccount1 = new CheckingAccount();
+checkAccount1.Balance = 200;
+checkAccount1.AccountId = 100;
+Console.WriteLine(checkAccount1.AccountId);
 
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
@@ -57,8 +59,11 @@ get { return _balance;}
 set {_balance = value;}
 } 
 public  void printBalance() {
-    Console.WriteLine($"Your account balance is {_balance}");
+    //Console.WriteLine($"Your account balance is {Balance}");
+    Console.WriteLine($"{Balance}");
 }
+
+
 }
 
 class PremiumAccount {
