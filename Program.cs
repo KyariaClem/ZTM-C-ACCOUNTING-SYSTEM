@@ -9,9 +9,9 @@ Console.WriteLine("TEST");
 
 // The following Features Should Be Implemented:
 CheckingAccount checkAccount1 = new CheckingAccount();
-checkAccount1.Balance = 200;
+checkAccount1.Balance = 200.50;
 checkAccount1.AccountId = 100;
-Console.WriteLine(checkAccount1.AccountId);
+Console.WriteLine(checkAccount1.Balance);
 
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
@@ -21,13 +21,13 @@ Console.WriteLine("Welcome to the Accounting System 1.0");
 
 //string accountQuestionAnswer = Console.ReadLine();
 //CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
-Console.WriteLine(checkAccount1.printBalance);
+//Console.WriteLine(checkAccount1.printBalance);
 
 //Console.WriteLine("Do you want to open a Checking or Premium account ?");
 class CheckingAccount {
 
     private int _accountId; 
-     private int _balance;
+     private double _balance;
 
 
 
@@ -37,7 +37,7 @@ class CheckingAccount {
         
     }
 
-    public CheckingAccount(int _accountId, int _balance)
+    public CheckingAccount(int _accountId, double _balance)
     {
         _accountId = 100;
          _balance = 0;
@@ -52,23 +52,54 @@ get { return _accountId;}
 set {_accountId = value;}
 } 
 
-public int Balance {
+public double Balance {
     // for getter return field name
     // for setter field name = value keyword
 get { return _balance;}
 set {_balance = value;}
 } 
-public  void printBalance() {
-    //Console.WriteLine($"Your account balance is {Balance}");
-    Console.WriteLine($"{Balance}");
-}
+// public  void printBalance() {
+//     //Console.WriteLine($"Your account balance is {Balance}");
+//     Console.WriteLine($"{Balance}");
+// }
 
 
 }
 
 class PremiumAccount {
     private int _accountId; 
-    private int _balance;
+    private float _balance;
+
+    
+
+
+    // set up empty constructor
+    public PremiumAccount()
+    {
+        
+    }
+
+    public PremiumAccount(int _accountId, float _balance)
+    {
+        _accountId = 100;
+         _balance = 0;
+    }
+// Properties
+// Use Capitalzed name for property name
+// 
+public int AccountId {
+    // for getter return field name
+    // for setter field name = value keyword
+get { return _accountId;}
+set {_accountId = value;}
+} 
+
+public float Balance {
+    // for getter return field name
+    // for setter field name = value keyword
+get { return _balance;}
+set {_balance = value;}
+} 
 
 }
 
