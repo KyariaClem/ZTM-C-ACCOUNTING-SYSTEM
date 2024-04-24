@@ -29,6 +29,8 @@ class CheckingAccount {
     private int _accountId; 
      private double _balance;
 
+     private double _interest;
+
 
 
     // set up empty constructor
@@ -37,10 +39,11 @@ class CheckingAccount {
         
     }
 
-    public CheckingAccount(int _accountId, double _balance)
+    public CheckingAccount(int _accountId, double _balance, double interest)
     {
         _accountId = 100;
          _balance = 0;
+         _interest = 0;
     }
 // Properties
 // Use Capitalzed name for property name
