@@ -68,7 +68,7 @@ set {_balance = value;}
 
 class PremiumAccount {
     private int _accountId; 
-    private float _balance;
+    private double _balance;
 
     
 
@@ -79,7 +79,7 @@ class PremiumAccount {
         
     }
 
-    public PremiumAccount(int _accountId, float _balance)
+    public PremiumAccount(int _accountId, double _balance)
     {
         _accountId = 100;
          _balance = 0;
@@ -94,7 +94,7 @@ get { return _accountId;}
 set {_accountId = value;}
 } 
 
-public float Balance {
+public double Balance {
     // for getter return field name
     // for setter field name = value keyword
 get { return _balance;}
