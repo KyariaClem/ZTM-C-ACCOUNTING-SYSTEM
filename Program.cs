@@ -38,18 +38,19 @@ class CheckingAccount {
      private double _interest;
 
 
-
+    private double _depoBalance;
     // set up empty constructor
     public CheckingAccount()
     {
         
     }
 
-    public CheckingAccount(int _accountId, double _balance, double interest)
+    public CheckingAccount(int _accountId, double _balance, double interest, double addBalance)
     {
         _accountId = 100;
          _balance = 0;
          _interest = 3;
+         _addBalance = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -75,6 +76,11 @@ public double Interest {
 
 }
 
+public double addBalance {}
+// Add Balance method
+public String addBalance() {
+    return ($"You have deposited ");
+}
 // Create method for adding interest
 // call the getting setter name
 public String addInterest() {
