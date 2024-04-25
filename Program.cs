@@ -11,7 +11,13 @@ Console.WriteLine("TEST");
 CheckingAccount checkAccount1 = new CheckingAccount();
 checkAccount1.Balance = 200.50;
 checkAccount1.AccountId = 100;
+checkAccount1.Interest = 3;
 Console.WriteLine(checkAccount1.Balance);
+Console.WriteLine(checkAccount1.Interest);
+String ch1Interest = checkAccount1.addInterest();
+
+Console.WriteLine(ch1Interest);
+
 
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
@@ -43,7 +49,7 @@ class CheckingAccount {
     {
         _accountId = 100;
          _balance = 0;
-         _interest = 0;
+         _interest = 3;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -61,6 +67,29 @@ public double Balance {
 get { return _balance;}
 set {_balance = value;}
 } 
+
+public double Interest {
+
+    get { return _interest;}
+    set {_interest = value;}
+
+}
+
+// Create method for adding interest
+// call the getting setter name
+public String addInterest() {
+   double interestBalance = Interest * Balance / 100 + Balance;
+
+    return ($"your interest is {Interest} + your {Balance} = {interestBalance}");
+}
+
+// public void addInterest() {
+//      Console.WriteLine($"your interest is {Interest} + your {Balance} = ");
+// }
+
+public String Test() {
+    return "Test";
+}
 // public  void printBalance() {
 //     //Console.WriteLine($"Your account balance is {Balance}");
 //     Console.WriteLine($"{Balance}");
