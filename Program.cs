@@ -9,15 +9,21 @@ Console.WriteLine("TEST");
 
 // The following Features Should Be Implemented:
 CheckingAccount checkAccount1 = new CheckingAccount();
-checkAccount1.Balance = 200.50;
+checkAccount1.Balance = 800.50;
 checkAccount1.AccountId = 100;
 checkAccount1.Interest = 3;
 Console.WriteLine(checkAccount1.Balance);
 Console.WriteLine(checkAccount1.Interest);
+// interest string
 String ch1Interest = checkAccount1.addInterest();
-
 Console.WriteLine(ch1Interest);
 
+// balance string 
+checkAccount1.Deposit = 400.50;
+
+String addingtoCheckingAccount = checkAccount1.addBalance();
+
+Console.WriteLine(addingtoCheckingAccount);
 
 
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
@@ -45,12 +51,12 @@ class CheckingAccount {
         
     }
 
-    public CheckingAccount(int _accountId, double _balance, double interest, double addBalance)
+    public CheckingAccount(int _accountId, double _balance, double interest, double depoBalance)
     {
         _accountId = 100;
          _balance = 0;
          _interest = 3;
-         _addBalance = 0;
+         _depoBalance = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -76,17 +82,21 @@ public double Interest {
 
 }
 
-public double addBalance {}
+public double Deposit {
+    get {return _depoBalance; }
+    set {_depoBalance = value;}
+}
 // Add Balance method
 public String addBalance() {
-    return ($"You have deposited ");
+    double depositBalance = Deposit + Balance;
+    return ($"You have deposited ${Deposit} into your checking account, your new account balance is: ${depositBalance}");
 }
 // Create method for adding interest
 // call the getting setter name
 public String addInterest() {
    double interestBalance = Interest * Balance / 100 + Balance;
 
-    return ($"your interest is {Interest} + your {Balance} = {interestBalance}");
+    return ($"your interest is {Interest}% + your account balance: ${Balance} = ${interestBalance}");
 }
 
 // public void addInterest() {
