@@ -25,7 +25,16 @@ String addingtoCheckingAccount = checkAccount1.addBalance();
 
 Console.WriteLine(addingtoCheckingAccount);
 
+// Preimum account instances
+PremiumAccount premiumAccount1 = new PremiumAccount();
+premiumAccount1.Balance = 2000;
+premiumAccount1.AccountId = 200;
+premiumAccount1.Interest = 3;
+Console.WriteLine(premiumAccount1.Balance);
 
+// Adding interest to account string
+String addingtoPremiuumAccount = premiumAccount1.addBalance();
+Console.WriteLine(addingtoPremiuumAccount);
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
 Console.WriteLine("Welcome to the Accounting System 1.0");
 // The accounting system should have a checking account and a premium account.
@@ -118,7 +127,10 @@ class PremiumAccount {
     private int _accountId; 
     private double _balance;
 
-    
+     private double _interest;
+
+
+    private double _depoBalance;
 
 
     // set up empty constructor
@@ -127,10 +139,12 @@ class PremiumAccount {
         
     }
 
-    public PremiumAccount(int _accountId, double _balance)
+    public PremiumAccount(int _accountId, double _balance, double interest, double depoBalance)
     {
         _accountId = 100;
          _balance = 0;
+         _interest = 0;
+         _depoBalance = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -148,6 +162,30 @@ public double Balance {
 get { return _balance;}
 set {_balance = value;}
 } 
+
+public double Interest {
+
+    get { return _interest;}
+    set {_interest = value;}
+
+}
+
+public double Deposit {
+    get {return _depoBalance; }
+    set {_depoBalance = value;}
+}
+
+public String addBalance() {
+    double depositBalance = Deposit + Balance;
+    return ($"You have deposited ${Deposit} into your premium account, your new account balance is: ${depositBalance}");
+}
+// Create method for adding interest
+// call the getting setter name
+public String addInterest() {
+   double interestBalance = Interest * Balance / 100 + Balance;
+
+    return ($"your interest is {Interest}% + your premium account balance: ${Balance} = ${interestBalance}");
+}
 
 }
 
