@@ -53,19 +53,24 @@ class CheckingAccount {
      private double _interest;
 
 
+
     private double _depoBalance;
+
+    private double _transfer;
+
     // set up empty constructor
     public CheckingAccount()
     {
         
     }
 
-    public CheckingAccount(int _accountId, double _balance, double interest, double depoBalance)
+    public CheckingAccount(int _accountId, double _balance, double interest, double depoBalance, double transfer)
     {
         _accountId = 100;
          _balance = 0;
          _interest = 3;
          _depoBalance = 0;
+         _transfer = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -95,6 +100,11 @@ public double Deposit {
     get {return _depoBalance; }
     set {_depoBalance = value;}
 }
+
+public double Transfer {
+    get { return _transfer; }
+    set {_transfer = value;}
+}
 // Add Balance method
 public String addBalance() {
     double depositBalance = Deposit + Balance;
@@ -120,6 +130,9 @@ public String Test() {
 //     Console.WriteLine($"{Balance}");
 // }
 
+
+// method fr transfer in account
+//DO NEXT !!
 
 }
 
