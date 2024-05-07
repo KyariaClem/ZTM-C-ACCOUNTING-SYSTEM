@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZTM-C-ACCOUNTING-SYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df9cde760ed7941ee88760d76f7633c2925aaef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9ac0ff32da5554c1f225ec32c9a932623c675f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZTM-C-ACCOUNTING-SYSTEM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZTM-C-ACCOUNTING-SYSTEM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

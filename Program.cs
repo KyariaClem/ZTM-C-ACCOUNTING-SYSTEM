@@ -107,6 +107,11 @@ public double Transfer {
     get { return _transfer; }
     set {_transfer = value;}
 }
+
+public PremiumAccount PremiumAccount {
+    get {return _premiumAccount; }
+    set {_premiumAccount = value; }
+}
 // Add Balance method
 public String addBalance() {
     double depositBalance = Deposit + Balance;
@@ -125,7 +130,7 @@ public String addInterest() {
 // }
 
 public String Test() {
-    return "uodate to git hub";
+    return "update to git hub";
 }
 // public  void printBalance() {
 //     //Console.WriteLine($"Your account balance is {Balance}");
@@ -135,7 +140,10 @@ public String Test() {
 
 // method fr transfer in account
 //DO NEXT !!
-
+public String accountTransfer() {
+    
+    return ($"You have transfered ");
+}
 }
 
 class PremiumAccount {
