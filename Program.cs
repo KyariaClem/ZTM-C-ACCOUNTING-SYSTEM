@@ -58,13 +58,15 @@ class CheckingAccount {
 
     private double _transfer;
 
+    private PremiumAccount _premiumAccount;
+
     // set up empty constructor
     public CheckingAccount()
     {
         
     }
 
-    public CheckingAccount(int _accountId, double _balance, double interest, double depoBalance, double transfer)
+    public CheckingAccount(int _accountId, double _balance, double interest, double _depoBalance, double _transfer,PremiumAccount _premiumAccount )
     {
         _accountId = 100;
          _balance = 0;
