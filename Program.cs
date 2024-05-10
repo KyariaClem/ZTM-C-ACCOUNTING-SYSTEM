@@ -58,7 +58,7 @@ class CheckingAccount {
 
     private double _transfer;
 
-    private PremiumAccount _premiumAccount;
+    //private PremiumAccount _premiumAccount;
 
     // set up empty constructor
     public CheckingAccount()
@@ -108,10 +108,10 @@ public double Transfer {
     set {_transfer = value;}
 }
 
-public PremiumAccount PremiumAccount {
-    get {return _premiumAccount; }
-    set {_premiumAccount = value; }
-}
+// public PremiumAccount PremiumAccount {
+//     get {return _premiumAccount; }
+//     set {_premiumAccount = value; }
+// }
 // Add Balance method
 public String addBalance() {
     double depositBalance = Deposit + Balance;
@@ -141,8 +141,8 @@ public String Test() {
 // method fr transfer in account
 //DO NEXT !!
 public String accountTransfer() {
-    
-    return ($"You have transfered ");
+double accountTransferAmount = Deposit + Transfer;
+    return ($"You have transfered {Transfer}, you balance is now: {accountTransferAmount} in your checkimh account, the remaning balance in your preimum account is:");
 }
 }
 
