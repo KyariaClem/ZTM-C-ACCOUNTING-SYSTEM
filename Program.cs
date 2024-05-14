@@ -212,7 +212,7 @@ public String addInterest() {
 
 }
 
-
+// MAINTENACE NOTES
 
 // A checking account has an ID (number) and a balance (decimal number).
 
