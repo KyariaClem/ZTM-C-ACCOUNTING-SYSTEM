@@ -5,6 +5,8 @@ using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
+Console.WriteLine("Welcome to the Accounting System 1.0");
+
 Console.WriteLine("TEST");
 
 // The following Features Should Be Implemented:
@@ -36,14 +38,16 @@ Console.WriteLine(premiumAccount1.Balance);
 String addingtoPremiuumAccount = premiumAccount1.addBalance();
 Console.WriteLine(addingtoPremiuumAccount);
 // Greet the user with a welcome message. Something like "Welcome to the Accounting System 1.0."
-Console.WriteLine("Welcome to the Accounting System 1.0");
+//Console.WriteLine("Welcome to the Accounting System 1.0");
 // The accounting system should have a checking account and a premium account.
 //Console.WriteLine("Do you want to open a Checking or Premium account ?");
 
 //string accountQuestionAnswer = Console.ReadLine();
 //CheckingAccount checkAccount1 = new CheckingAccount(100, 200);
 //Console.WriteLine(checkAccount1.printBalance);
-
+checkAccount1.Transfer = 200;
+String accountTransferToAccount = checkAccount1.accountTransfer();
+Console.WriteLine(accountTransferToAccount);
 //Console.WriteLine("Do you want to open a Checking or Premium account ?");
 class CheckingAccount {
 
@@ -141,8 +145,8 @@ public String Test() {
 // method fr transfer in account
 //DO NEXT !!
 public String accountTransfer() {
-double accountTransferAmount = Deposit + Transfer;
-    return ($"You have transfered {Transfer}, you balance is now: {accountTransferAmount} in your checkimh account, the remaning balance in your preimum account is:");
+double accountTransferAmount = Balance + Transfer;
+    return ($"You have transfered {Transfer}, you balance is now: {accountTransferAmount} in your checking account, the remaning balance in your preimum account is:");
 }
 }
 
