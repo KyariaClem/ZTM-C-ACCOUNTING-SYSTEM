@@ -49,6 +49,14 @@ checkAccount1.Transfer = 200;
 String accountTransferToAccount = checkAccount1.accountTransfer();
 Console.WriteLine(accountTransferToAccount);
 //Console.WriteLine("Do you want to open a Checking or Premium account ?");
+
+
+// System Questions
+Console.WriteLine("Welcome ! what is your name ? ");
+
+String systemName = Console.ReadLine();
+
+Console.WriteLine($"Hello {systemName}, what type of banking acount do you wish to open ?");
 class CheckingAccount {
 
     private int _accountId; 
