@@ -55,13 +55,22 @@ Console.WriteLine(accountTransferToAccount);
 // Welcome Questions
 Console.WriteLine("Welcome ! what is your name ? ");
 String systemName = Console.ReadLine();
-Console.WriteLine($"Hello {systemName}, what type of banking acount do you wish to open ?");
+Console.WriteLine($"Hello {systemName}, do you want  to open a checking account ?");
 
 // acccount type answer by user input
-string accounttype = Console.ReadLine();
-Console.WriteLine($"Awesome, you want to open a {accounttype}, how much do you want to deposit ?");
+string inputAccountType = Console.ReadLine();
+bool accountType = bool.Parse(inputAccountType);
+Console.WriteLine($"Awesome, you want to open a {accountType}, how much do you want to deposit ?");
 string inputAccountDeposit = Console.ReadLine();
-int accountDeposit = 
+int accountDeposit = int.Parse(inputAccountDeposit);
+
+CheckingAccount userAccount = new CheckingAccount();
+userAccount.Deposit = accountDeposit;
+
+if(accountType) {
+    Console.WriteLine($"COngrats you have opened {inputAccountType}, you have deposited: {userAccount.Deposit}");
+};
+
 class CheckingAccount {
 
     private int _accountId; 
