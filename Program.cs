@@ -64,11 +64,11 @@ Console.WriteLine($"Awesome, you want to open a {accountType}, how much do you w
 string inputAccountDeposit = Console.ReadLine();
 int accountDeposit = int.Parse(inputAccountDeposit);
 
-CheckingAccount userAccount = new CheckingAccount();
-userAccount.Deposit = accountDeposit;
+CheckingAccount userAccountChecking = new CheckingAccount();
+userAccountChecking.Deposit = accountDeposit;
 
 if(accountType) {
-    Console.WriteLine($"COngrats you have opened {inputAccountType}, you have deposited: {userAccount.Deposit}");
+    Console.WriteLine($"COngrats you have opened {inputAccountType}, you have deposited: {userAccountChecking.Deposit}");
 };
 
 class CheckingAccount {
