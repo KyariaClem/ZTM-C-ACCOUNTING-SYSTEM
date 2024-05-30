@@ -57,19 +57,31 @@ Console.WriteLine("Welcome ! what is your name ? ");
 String systemName = Console.ReadLine();
 Console.WriteLine($"Hello {systemName}, do you want  to open a checking account ?");
 
+
+string yesAnswer = "yes";
+string accountYesNoQuestion = Console.ReadLine();
+if(accountYesNoQuestion == yesAnswer) {
+    Console.WriteLine("Awesome, you want to open a checking account how much do you want to deposit ?");
+//     string inputAccountDeposit = Console.ReadLine();
+// int accountDeposit = int.Parse(inputAccountDeposit);
+// string inputAccountDeposit = Console.ReadLine();
+//     Console.WriteLine("It worked !");
+};
 // acccount type answer by user input
-string inputAccountType = Console.ReadLine();
-bool accountType = bool.Parse(inputAccountType);
-Console.WriteLine($"Awesome, you want to open a {accountType}, how much do you want to deposit ?");
+// string inputAccountType = Console.ReadLine();
+// // bool accountType = bool.Parse(inputAccountType);
+// Console.WriteLine($"Awesome, you want to open a {inputAccountType}, how much do you want to deposit ?");
 string inputAccountDeposit = Console.ReadLine();
 int accountDeposit = int.Parse(inputAccountDeposit);
 
 CheckingAccount userAccountChecking = new CheckingAccount();
 userAccountChecking.Deposit = accountDeposit;
 
-if(accountType) {
-    Console.WriteLine($"COngrats you have opened {inputAccountType}, you have deposited: {userAccountChecking.Deposit}");
-};
+// if(accountType) {
+//     Console.WriteLine($"Congrats you have opened {inputAccountType}, you have deposited: ${userAccountChecking.Deposit}");
+// } else {
+//     Console.WriteLine($"Goodbye, {systemName}");
+// };
 
 class CheckingAccount {
 
