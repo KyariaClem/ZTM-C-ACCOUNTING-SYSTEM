@@ -205,7 +205,7 @@ class PremiumAccount {
         _accountId = 100;
          _balance = 0;
          _interest = 0;
-         _depoBalance = 0;
+         _depoBalance = 8;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -291,3 +291,4 @@ public String addInterest() {
 // Print the interest for both accounts.
 
 // Print the balance of both accounts after adding the interest to the accounts.
+
