@@ -60,12 +60,18 @@ Console.WriteLine($"Hello {systemName}, do you want  to open a checking account 
 
 string yesAnswer = "yes";
 string accountYesNoQuestion = Console.ReadLine();
+String noAnswer = "no";
+String accountNoQuestion = Console.ReadLine();
 if(accountYesNoQuestion == yesAnswer) {
     Console.WriteLine("Awesome, you want to open a checking account how much do you want to deposit ?");
 //     string inputAccountDeposit = Console.ReadLine();
 // int accountDeposit = int.Parse(inputAccountDeposit);
 // string inputAccountDeposit = Console.ReadLine();
 //     Console.WriteLine("It worked !");
+} else if(accountNoQuestion == noAnswer){
+    Console.WriteLine("Do you want to open a premiu account ?");
+} else {
+    Console.WriteLine("Have a great day !");
 };
 // acccount type answer by user input
 // string inputAccountType = Console.ReadLine();
