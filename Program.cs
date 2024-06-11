@@ -68,11 +68,17 @@ if(accountYesNoQuestion == yesAnswer) {
 // int accountDeposit = int.Parse(inputAccountDeposit);
 // string inputAccountDeposit = Console.ReadLine();
 //     Console.WriteLine("It worked !");
-} else if(accountNoQuestion == noAnswer){
-    Console.WriteLine("Do you want to open a premiu account ?");
+} else if (accountNoQuestion == noAnswer) {
+    Console.WriteLine("Do you want to open a premium account ?");
 } else {
     Console.WriteLine("Have a great day !");
 };
+
+
+string yesTransferAnswer = "yes";
+string transferQuestion = Console.ReadLine();
+string noTransferAnswer = "no";
+string 
 // acccount type answer by user input
 // string inputAccountType = Console.ReadLine();
 // // bool accountType = bool.Parse(inputAccountType);
@@ -297,4 +303,6 @@ public String addInterest() {
 // Print the interest for both accounts.
 
 // Print the balance of both accounts after adding the interest to the accounts.
+
+
 
