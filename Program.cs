@@ -76,9 +76,9 @@ if(accountYesNoQuestion == yesAnswer) {
 
 
 string yesTransferAnswer = "yes";
-string transferQuestion = Console.ReadLine();
+string transferYesAnswer = Console.ReadLine();
 string noTransferAnswer = "no";
-string 
+string transferNoAnswer = Console.ReadLine();
 // acccount type answer by user input
 // string inputAccountType = Console.ReadLine();
 // // bool accountType = bool.Parse(inputAccountType);
