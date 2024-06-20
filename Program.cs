@@ -79,6 +79,9 @@ string yesTransferAnswer = "yes";
 string transferYesAnswer = Console.ReadLine();
 string noTransferAnswer = "no";
 string transferNoAnswer = Console.ReadLine();
+if(transferNoAnswer == yesTransferAnswer) {
+    Console.WriteLine("How much do you want to deposit ?");
+}
 // acccount type answer by user input
 // string inputAccountType = Console.ReadLine();
 // // bool accountType = bool.Parse(inputAccountType);
