@@ -208,6 +208,8 @@ class PremiumAccount {
 
     private double _depoBalance;
 
+    private double _transfer;
+
 
     // set up empty constructor
     public PremiumAccount()
@@ -215,12 +217,13 @@ class PremiumAccount {
         
     }
 
-    public PremiumAccount(int _accountId, double _balance, double interest, double depoBalance)
+    public PremiumAccount(int _accountId, double _balance, double interest, double depoBalance, double transfer)
     {
         _accountId = 100;
          _balance = 0;
          _interest = 0;
          _depoBalance = 8;
+         _transfer = 0;
     }
 // Properties
 // Use Capitalzed name for property name
@@ -251,6 +254,11 @@ public double Deposit {
     set {_depoBalance = value;}
 }
 
+public double Transfer {
+    get {return _transfer; }
+    set{_transfer = value;}
+}
+
 public String addBalance() {
     double depositBalance = Deposit + Balance;
     return ($"You have deposited ${Deposit} into your premium account, your new account balance is: ${depositBalance}");
@@ -262,6 +270,9 @@ public String addInterest() {
 
     return ($"your interest is {Interest}% + your premium account balance: ${Balance} = ${interestBalance}");
 }
+
+
+
 
 }
 
