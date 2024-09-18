@@ -222,7 +222,7 @@ class PremiumAccount {
         _accountId = 100;
          _balance = 0;
          _interest = 0;
-         _depoBalance = 8;
+         _depoBalance = 9;
          _transfer = 0;
     }
 // Properties
@@ -318,5 +318,20 @@ public String addInterest() {
 
 // Print the balance of both accounts after adding the interest to the accounts.
 
+// passing Reference types as parameters
+/*   
+Arguments are either:
+    -pass-by-value
+    -pass-by-reference
 
-
+c# value types: struct, int, bool
+    reference types: classes
+-refernce types (classes) are passed as arguments
+Defintions:
+PASS-BY-VALUE:
+ a COPY of a variable will be passed to the method
+ PASS-BY-REFERENCE:
+    Acesss to the variable will be passed to the method
+Default in c# ?
+        -PASS-BY-VALUE; means when we pass an instance of the class to a method, the mehtod receives a COPY of the REFERENCE
+*/
