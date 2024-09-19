@@ -334,4 +334,22 @@ PASS-BY-VALUE:
     Acesss to the variable will be passed to the method
 Default in c# ?
         -PASS-BY-VALUE; means when we pass an instance of the class to a method, the mehtod receives a COPY of the REFERENCE
+
+
+REF KEYWORD 
+    What ?
+        -PASS-BY-REFERENCE: ref 
+    Where (Do we add the keyword) ?
+        -In front of parameter and in front of variable calling
+EXAMPLE:
+    MethodParameters.ChangeName( ref person) <-- Us calling the mehthod with reference/ ref keyowrd will also be in front of the variable in the class 
+
+CLASS:
+    public class MethodParameters
+    {
+        public static void ChangeName(ref Person person)
+        {
+            person.Name =
+        }
+    }
 */
