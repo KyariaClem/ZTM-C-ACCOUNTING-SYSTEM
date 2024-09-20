@@ -349,7 +349,25 @@ CLASS:
     {
         public static void ChangeName(ref Person person)
         {
-            person.Name =
+            person.Name ="Unknown"  <-- person refers to a class called person not listed
         }
+    }
+
+    How to use pass-by-reference ?:
+        -Use REF keyword
+*/
+
+// EXCEPTION HANDLING
+/*  
+WHAT ?:
+        -An event that happens during the execution of a .net application in an exception case
+ALLOWS?: 
+    - .NET developers to transfer control from place where errors occur to another where they are handled
+
+SYNTAX:
+
+    try 
+    {
+        // potentional 
     }
 */
