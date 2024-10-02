@@ -368,6 +368,14 @@ SYNTAX:
 
     try 
     {
-        // potentional 
+        // potentional exception throwing block
+    }
+    catch (Exception exception)
+    {   
+        // handling the exception
+    }
+    finally
+    {
+        // running always after the catch
     }
 */
