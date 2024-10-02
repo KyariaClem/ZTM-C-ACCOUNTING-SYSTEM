@@ -398,4 +398,15 @@ ARRAYS:
  -printing a specfic value fron array; use sqaure brackets when using console.writeline
  ex:
  Console.WriteLine(array1[0]);
+
+ SECOND WAY IN CREATING ARRAY(ONLY WORKS IF YOU KNOW THE VALUES YOU WANT IN ARRAY):
+ Syntax:
+ int[] arrayname = new int[] {values, values, values};
+EX:
+int[] array2 = new int[] {7,8,9,34};
+
+ADDITIONAL NOTES:
+-can use var keyword to replace type when setting array up
+EX:
+var array2 = new
 */
