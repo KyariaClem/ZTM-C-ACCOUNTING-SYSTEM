@@ -379,3 +379,23 @@ SYNTAX:
         // running always after the catch
     }
 */
+
+// Arrays / collection types
+/* 
+-Set the size of arrays during intialzarion
+- Different collection types, cany vary in size and edit
+
+ARRAYS:
+ -Can store multiple variables of the same type in an arrray
+ SYNTAX:
+ type[] array_name = new type[number of variables that will be in new array]
+ EX: int[] array1 = new int[7];
+
+ settting / acess postion in array: (REMEMBER POSITION NUMBERING STARTS AT 0 !)"
+ = setting position 0 to 7:
+ array1[0] = 7;
+
+ -printing a specfic value fron array; use sqaure brackets when using console.writeline
+ ex:
+ Console.WriteLine(array1[0]);
+*/
