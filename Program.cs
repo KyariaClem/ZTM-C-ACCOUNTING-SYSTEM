@@ -408,5 +408,30 @@ int[] array2 = new int[] {7,8,9,34};
 ADDITIONAL NOTES:
 -can use var keyword to replace type when setting array up
 EX:
-var array2 = new
+var array2 = new int[] {7,8,9,34};
+
+ALT SYNTAX:
+int[] arrayname = {values, values, values};
+int[] array3 = {7,8,9,24};
+
+FOR EACH:
+Access all the elements in array
+- allows us to look at all elements in array from start to finish 
+
+
+
+Array List:
+creating instance of ArrayList:
+var arrayListName = new ArrayList();
+
+EXAMPLE
+var arrayList = new ArrayList();
+
+How to add elements to Array List ?
+    .Add(
+EX
+    var day = 22
+    arrayList.Add(day);
+
+
 */
