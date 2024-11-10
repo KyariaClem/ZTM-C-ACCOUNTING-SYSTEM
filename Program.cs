@@ -433,5 +433,7 @@ EX
     var day = 22
     arrayList.Add(day);
 
-
+// The Generic List : List<T>
+items access ?
+    -Using index
 */
